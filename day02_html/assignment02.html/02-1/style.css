@@ -1,0 +1,40 @@
+table {
+    border-left: 2px gray solid;
+    border-top: 2px gray solid;
+    border-right: 2px black solid;
+    border-bottom: 2px black solid;
+}
+
+
+td, th {
+    border: 1px gray solid;
+    padding-left: 7px;
+    padding-right: 50px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.text {
+    width: 250px;
+    height: 20px;
+    border: 1px rgb(209, 205, 205) solid;
+}
+
+#button {
+    text-align: center; 
+    padding: 5px 3px; 
+
+}
+
+#reset {
+    margin-right: 20px;
+    padding: 3px 5px;  
+}
+
+#OK {
+    padding: 3px 10px;
+}
+
+#register {
+    padding: 7px 0px;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng ký</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+        <table>
+            <thead>                
+                <tr>
+                    <th colspan="2" id="register">ĐĂNG KÝ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Full name</td>
+                    <td>
+                        <input type="text" placeholder="Nhập fullname" class="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>User name</td>
+                    <td>
+                        <input type="text" placeholder="Nhập tên" class="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" placeholder="Nhập mật khẩu" class="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nhập lại <br> Password</td>
+                    <td>
+                        <input type="password" placeholder="Nhập lại mật khẩu" class="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Giới tính</td>
+                    <td>
+                        <!-- hỏi anh Hiên xem làm thế nào để ko chọn cả 2 mục giới tính -->
+                        <input type="radio" name="gender" id="nam" >
+                        <label for="nam">Nam</label>
+                        <input type="radio" name="gender" id="nữ" >
+                        <label for="nữ">Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ngày sinh</td>
+                    <td>
+                        <select name="day">
+                            <option value="">Ngày 1</option>
+                        </select>
+                        <select name="month">
+                            <option value="">Tháng 1</option>
+                        </select>
+                        <select name="year">
+                            <option value="">Năm 2015</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ</td>
+                    <td>
+                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Avatar</td>
+                    <td>
+                        <input type="file">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sở thích</td>
+                    <td>
+                        <input type="checkbox" id="movie">
+                        <label for="movie">Xem phim</label>
+                        <input type="checkbox" id="sport">
+                        <label for="sport">Thể thao</label>
+                        <input type="checkbox" id="Web">
+                        <label for="Web">Web</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="button">
+                            <input type="button" value="Reset" id="reset">
+                            <input type="button" value="OK" id="OK">
+                    </td>       
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

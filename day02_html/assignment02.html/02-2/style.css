@@ -1,0 +1,23 @@
+.baitap {
+    width: 400px;
+    background-color: #30598c;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+p {
+    padding-left: 50px;
+    padding-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+#title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.child {
+    width: 350px;
+}
