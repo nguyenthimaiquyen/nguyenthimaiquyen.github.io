@@ -14,7 +14,6 @@ span {
 }
 
 .card {
-    width: 350px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
     border-radius: 4px;
     overflow: hidden;
@@ -27,7 +26,9 @@ span {
 }
 
 .card-image {
-    height: 230px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .card-content {
@@ -49,5 +50,20 @@ span {
 
 .tructuyen {
     margin: 20px 0;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-item {
+    flex-basis: 33.33%;
+
 }
 

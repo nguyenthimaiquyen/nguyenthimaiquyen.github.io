@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    padding: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+a {
+    text-decoration: none;
+    
+}
+
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,.15);
+    border-radius: 4px;
+    overflow: hidden;
+    
+}
+
+.card-item {
+    flex-basis: 33.33%;
+    padding: 15px;
+    
+}
+
+.card-image {
+    height: 230px;
+}
+
+.card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    height: 120px;
+}
+
+.card-title {
+    color: #464646;
+    font-size: 19px;
+}
+
+.card-description {
+    color: #757575;
+    font-size: 14px;
+    padding-top: 20px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.card i {
+    color: yellow
+}
+
+.footer {
+    background-color: #30598c;
+    width: 100%;
+}
+
+
+
+.col {
+    color: white;
+    padding: 50px 5px 50px 50px;
+}
+
+
+
+ul li {
+    list-style-type: none;
+    padding: 10px 0px;
+    font-size: 14px;
+}
+
+ul li a, div a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+ul li a:hover, div a:hover {
+    color: gray;
+}
+
+.header {
+    font-size: 18px;
+}
+
+.icon-footer span {
+    margin: 100px 20px;
+    font-size: 30px;
+    color: white;
+}
+
