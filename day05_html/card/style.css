@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font: inherit;
 }
 
 body {
@@ -30,17 +31,31 @@ a {
     box-shadow: 0 2px 4px rgba(0,0,0,.15);
     border-radius: 4px;
     overflow: hidden;
-    
+    transition: all 0.5s;
+}
+
+.card:hover {
+    box-shadow: 0 2px 4px rgba(0,0,0,.45);
 }
 
 .card-item {
     flex-basis: 33.33%;
     padding: 15px;
-    
 }
 
 .card-image {
     height: 230px;
+}
+
+.card-image {
+    height: 230px;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.card-image:hover {
+    transform: scale(1.1);
+
 }
 
 .card-image img {
@@ -57,6 +72,7 @@ a {
 .card-title {
     color: #464646;
     font-size: 19px;
+    /* text-shadow: ; */
 }
 
 .card-description {
@@ -71,13 +87,14 @@ a {
     color: yellow
 }
 
+/* css cho footer */
 .footer {
     background-color: #30598c;
     width: 100%;
 }
 
 .row2 {
-    margin: 20px 80px 0px 80px;
+    margin: 0px 80px 0px 80px;
     padding-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -104,16 +121,14 @@ a {
     width: 320px;
 }
 
-ul li {
+.menu ul li, .row2 ul li {
     list-style-type: none;
     padding: 10px 0px;
-    font-size: 14px;
 }
 
 ul li a, div a {
     text-decoration: none;
     color: white;
-    
 }
 
 ul li a:hover, div a:hover {
@@ -155,7 +170,7 @@ ul li a:hover, div a:hover {
     align-items: center;
 }
 
-.menu ul {
+.menu .main-menu {
     display: flex;
 }
 
@@ -181,11 +196,19 @@ ul {
     list-style-type: none;
 }
 
-.menu ul li {
-    font-weight: 400;
+.menu .main-menu .menu-item {
     text-transform: uppercase;
     margin-right: 24px;
     font-size: 17px;
+    position: relative;
+
+    height: 62px;
+    display: flex;
+    align-items: center;
+}
+
+.menu .main-menu .menu-item:hover .sub-menu {
+    display: block;
 }
 
 .cart-count {
@@ -194,4 +217,142 @@ ul {
     border-radius: 5px;
     position: absolute;
     top: 3px;
+}
+.sub-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0, .15);
+    background-color: #fff;
+    border-radius: 4px;
+    display: none;
+}
+
+.sub-menu-item {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: none;
+    cursor: pointer;
+    padding: 16px;
+    color: #464646;
+}
+
+.sub-menu-item:hover {
+    background-color: #c4c4c4;
+    color: #fff;
+}
+
+/* css cho phần body chi tiết khóa học */
+
+.body-part {
+    background-color: #faf8f8;
+}
+.container-page2 {
+    width: 1200px;
+    margin: auto;
+    padding: 30px;
+}
+
+.body-content {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.row-body {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 15px;
+}
+
+.row-body-content a {
+    color: rgb(66, 65, 65);
+}
+
+.space {
+    padding: 0 15px;
+}
+
+.content-course {
+    width: 700px;
+    max-height: 1200px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px rgba(0,0,0,.15);
+}
+
+.title-course {
+    font-size: 19px;
+    padding: 8px 24px;
+}
+
+.support {
+    align-items: center;
+    display: flex;
+    border: 1px solid #e8e7e7;
+    padding: 16px 24px 32px;
+}
+
+.support-info-left img {
+    border-radius: 50%;
+    width: 100px;
+}
+
+.support-info-right {
+    margin-left: 16px;
+}
+
+.support-info-right span {
+    color: #414141;
+    display: block;
+    font-style: normal;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.support-info-right button {
+    cursor: pointer;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 4px;
+    padding: 7px 11px;
+    font-size: 17px;
+    transition: color 0.15s;
+}
+
+.support-info-right button:hover {
+    box-shadow: 0 0 0 0.2rem rgba(38,143,255,.5);
+}
+
+.course-description {
+    padding: 16px 24px 32px;
+    border-bottom: 1px solid #e8e7e7;
+    color: #464646;
+}
+
+.course-description p a {
+    color: blue;
+}
+
+.course-description p {
+    margin: 15px 0px;
+    word-spacing: 1.5px
+}
+
+.course-description h3 {
+    margin: 30px 0px 15px 10px;
+    font-size: 26px;
+}
+
+.course-description div ul li {
+    margin: 7px 10px 7px 20px;
+    padding: 7px 0px;
+    list-style-type: disc;
+    word-spacing: 1.5px
+}
+
+.course-description div ul li a {
+    color: blue;
 }

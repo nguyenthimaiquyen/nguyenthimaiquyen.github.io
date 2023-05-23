@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập tổng hợp javascript</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="validation.js"></script>
+</head>
+<body>
+    <div id="container">
+        <a href="#" id="dangki" class="tab" onclick="onDangKi()">ĐĂNG KÝ</a>
+        <a href="#" id="dangnhap" class="tab" onclick="onDangNhap()">ĐĂNG NHẬP</a>
+
+        <!-- đăng kí -->
+        <div id="divdangki" class="divForm">
+            <form action="trangchu.php" name="frmdangki" class="form">
+                <h3>đăng ký thành viên</h3>
+                <hr>
+                <div>
+                    <p id="pthongbao"></p>
+                </div>
+                
+                <table>
+                    <tr>
+                        <td>Tên đăng nhập</td>
+                        <td> 
+                            <input type="text" class="inputCss" id="tendangnhap">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mật khẩu</td>
+                        <td> 
+                            <input type="password" class="inputCss" id="matkhau">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td> 
+                            <input type="text" class="inputCss" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nghề nghiệp</td>
+                        <td> 
+                            <select name="nghenghiep" id="nghenghiep" class="inputCss">
+                                <option id="0">Vui lòng chọn</option>
+                                <option value="kysu">Kỹ sư</option>
+                                <option value="Ketoan">Kế toán</option>
+                                <option value="bacsi">Bác sĩ</option>
+                                <option value="giaovien">Giáo viên</option>
+                                <option value="doanhnhan">Doanh nhân</option>
+                                <option value="tudo">Tự do</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tuổi</td>
+                        <td> 
+                            <input type="text" class="inputCss" id="tuoi">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Giới tính</td>
+                        <td> 
+                            <input type="radio" name="gender" id="nam">
+                            <label for="nam">Nam</label>
+                            <input type="radio" name="gender" id="nu">
+                            <label for="nu">Nữ</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="ĐĂNG KÝ" class="btndangki" onclick="return kiemTraHopLe()">                 
+                        </td>
+                    </tr>
+                </table>
+                <p class="description">Bạn đã có tài khoản? Vui lòng click 
+                   <b><a href="#" onclick="onDangNhap()">Đăng nhập</a></b></p>
+            </form>
+        </div>
+        <!-- đăng nhập -->
+        <div id="divdangnhap" class="divForm">
+            <form action="trangchu.php" name="formdangnhap">
+                <h3>đăng nhập</h3>
+                <hr>
+                <table>
+                    <tr>
+                        <td>Tên đăng nhập</td>
+                        <td> 
+                            <input type="text" class="inputCss" id="iddangnhap">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mật khẩu</td>
+                        <td> 
+                            <input type="password" class="inputCss" id="idmatkhau">
+                        </td>
+                    </tr>    
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" id="btnghinho" class="btnghinho">
+                            <label for="btnghinho">Ghi nhớ lần sau</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="quenmatkhau">
+                            <a href="#">Quên mật khẩu?</a> </td>
+                    </tr>                
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="ĐĂNG NHẬP" class="btndangnhap">
+                        </td>
+                    </tr>
+                    
+                </table>
+                <p class="description">Bạn chưa có tài khoản? Vui lòng click 
+                   <b><a href="#" onclick="onDangKi()">Đăng ký</a></b></p>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
