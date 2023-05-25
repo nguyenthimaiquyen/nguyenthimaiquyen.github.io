@@ -48,7 +48,38 @@ function kiemTraBatBuocDangKi() {
 
 }
 
+function kiemTraEmail(idTag) {
+    var inputTag = document.getElementById(idTag);
+    var email = /^([\w\.])+@([a-zA-Z0-9\-])+\.([a-zA-z]{2,4})(\.[a-zA-Z]{2,4})?$/;
+    var pthongbao = document.getElementById("pthongbao");
+    if (inputTag.value.match(email)) {
+        pthongbao.style.display = "none";
+        return true;
+    } else {
+        pthongbao.style.display = "block";
+        pthongbao.innerHTML = "Hãy nhập email hợp lệ!";
+        //pthongbao.style.color = "red";
+        return false;
+    }
+}
+
+function kiemTraMinMax(idTag, minlength, maxlength) {
+    var inputText = document.getElementById(idTag);
+    var field = inputText.value;
+    var pthongbao = document.getElementById("pthongbao");
+    if (field.length < minlength || field.length > maxlength) {
+        pthongbao.style.display = "block";
+        pthongbao.innerHTML = "Hãy nhập vào giá trị từ " + minlength + " đến " + maxlength;
+       // theP.style.color = "red";
+        return false;				
+    } else {
+        pthongbao.style.display = "none";
+        return true;
+    }
+}
+
+
 function kiemTraHopLe() {
-    return kiemTraBatBuocDangKi();
+    return kiemTraBatBuocDangKi() && kiemTraMinMax("tendangnhap", 6, 13) && kiemTraEmail("email");
 }
 
