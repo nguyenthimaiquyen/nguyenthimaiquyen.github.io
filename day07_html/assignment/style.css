@@ -5,11 +5,18 @@
 }
 
 /* css hiệu ứng tuyết rơi */
-body {
+.container {
     height: 100vh;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     overflow: hidden;
     filter: drop-shadow(0 0 10px white);
+    background-image: url("https://hinhanhdephd.com/wp-content/uploads/2015/12/hinh-nen-giang-sinh-24-12.2.jpg");
+    object-fit: cover; 
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
   }
   
   .snow {
@@ -2620,35 +2627,24 @@ body {
     }
   }
 
-/* css cho ảnh nền */
-
- .image {
-    object-fit: cover; 
-    /* thuộc tính giúp ảnh ko bị vỡ */
-    opacity: 0.5;
-    /* thuộc tính làm đục ảnh */
-}
-
 /* css cho chữ merry christmas */
 
 .text-merry-christmas {
     position: relative;
     -webkit-box-reflect: below -12px linear-gradient(
         transparent, rgba(0,0,0,0.2));
-
+    position: absolute;
+    top: 30px;
+    right: 60px;
 }
 
 .text-merry-christmas span {
     display: inline-block;
     color: #fff;
-    font-size: 2em;
+    font-size: 4em;
     text-transform: uppercase;
     animation: animate 1s ease-in-out infinite;
     animation-delay: calc(0.1s * var(--i));
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 5000;
 }
 
 @keyframes animate {
@@ -2663,11 +2659,53 @@ body {
     }
 }
 
+.content {
+    align-self: flex-end;
+    margin-bottom: 200px;
+    background-color: rgb(43, 30, 180);
+    color: yellow;
+    width: 600px;
+    padding: 30px;
+    font-size: 18px;
+    border-radius: 100px;
+    position: absolute;
+    bottom: -90px;
+    right: 200px;
+    opacity: 0.7;
+}
+
+.title {
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.description {
+    padding: 20px 0px;
+    line-height: 25px;
+    font-weight: bold;
+    font-size: 22px;    
+}
+
+.signature {
+    padding-left: 70px;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: bold;
+}
+
 /* css cho trái tim đập */
+
+
 .heart {
     font-size: 180px;
     animation: heart 1s 1s infinite;
-
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
 }
 
 @keyframes heart {
