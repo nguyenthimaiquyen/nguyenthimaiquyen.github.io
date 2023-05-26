@@ -2665,6 +2665,7 @@
     background-color: rgb(43, 30, 180);
     color: yellow;
     width: 600px;
+    height: 260px;
     padding: 30px;
     font-size: 18px;
     border-radius: 100px;
@@ -2672,6 +2673,7 @@
     bottom: -90px;
     right: 200px;
     opacity: 0.7;
+    font-family:cursive;
 }
 
 .title {
@@ -2684,7 +2686,7 @@
     padding: 20px 0px;
     line-height: 25px;
     font-weight: bold;
-    font-size: 22px;    
+    font-size: 22px;   
 }
 
 .signature {
@@ -2698,27 +2700,68 @@
 
 
 .heart {
-    font-size: 180px;
     animation: heart 1s 1s infinite;
-    width: 20px;
-    height: 20px;
+    transition: all 1s;
     position: absolute;
-    z-index: 100;
-    top: 0;
-    right: 0;
+    bottom: 312px;
+    right: 410px;
+    z-index: 10;
+    color: red;
 }
 
 @keyframes heart {
     0% {
-        font-size: 100px;
+        font-size: 10px;
         opacity: 0.2;
     }
     60% {
-        left: 120px;
+        font-size: 20px;
         opacity: 0.6;
     }
     100% {
-        left: 180px;
+        font-size: 30px;
         opacity: 1;
     }
 }
+
+#space {
+    padding-left: 22px;
+}
+
+
+.description {
+    position: relative;
+    animation: content 2s;
+    display: inline-block;
+}
+
+@keyframes content {
+    0% {
+        right: 500px;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+.signature {
+    margin: 10px 0px;
+    position: relative;
+    animation: p 2s;
+    display: inline-block;
+}
+
+@keyframes p {
+    0% {
+        left: 500px;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+
