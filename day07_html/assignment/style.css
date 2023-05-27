@@ -2731,7 +2731,7 @@
 
 .description {
     position: relative;
-    animation: content 2s;
+    animation: content 4s;
     display: inline-block;
 }
 
@@ -2749,7 +2749,7 @@
 .signature {
     margin: 10px 0px;
     position: relative;
-    animation: p 2s;
+    animation: p 4s;
     display: inline-block;
 }
 
