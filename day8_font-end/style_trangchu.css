@@ -357,6 +357,10 @@ div {
     padding-bottom: 50px;
 }
 
+.buttom-hoa div a:hover {
+    color: gray;
+}
+
 .detail-hoa {
     background-color: #42f29f;
     padding: 10px;
@@ -460,7 +464,7 @@ ul li a, div a {
     color: black;
 }
 
-ul li a:hover, div a:hover {
+.col ul li a:hover {
     color: #42f29f;
 }
 
