@@ -1,0 +1,525 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper {
+    background-color: #fff;
+    position: relative;
+}
+
+div {
+    display: block;
+}
+
+/* css cho header */
+
+.header-main {
+    height: 100px;
+}
+
+.header-inner {
+    margin-left: 200px;
+    display: flex;
+
+}
+
+#logo {
+    padding-right: 40px;
+}
+
+#logo a img {
+    width: 200px;
+    max-height: 100%;
+}
+
+
+.search {
+    display: flex;
+    padding-top: 30px;
+}
+
+.search-section ul li {
+    list-style-type: none;
+}
+.search-from-categories {
+    border: 1px solid #d4d4d4;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: none;
+}
+
+#search-categories {
+    width: 55px;
+    height: 39px;
+    font-size: 15px;
+    border: none;
+    padding-left: 10px;
+}
+
+.button-search input {
+    border: 1px solid #d4d4d4;
+    height: 40px;
+    font-size: 15px;
+    padding-left: 10px;
+    width: 500px;
+}
+
+.button-submit button {
+    height: 40px;
+    width: 65px;
+    background-color: #42f29f;
+    border: none;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+}
+
+.button-submit button i {
+    font-size: 18px;
+}
+
+.hearder-cart {
+    margin-top: 32px;
+    margin-left: 80px;
+    padding: 8px 15px 5px 15px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #42f29f;
+    font-weight: 500;
+}
+
+.hearder-cart a {
+    text-decoration: none;
+}
+
+.hearder-cart a:hover {
+    color: gray;
+}
+
+.sidebar {
+    display: flex;
+    align-items: center;
+    background-color: #42f29f;
+    height: 50px;
+}
+
+.menu {
+    margin-left: 250px;
+}
+
+.sidebar .main-menu {
+    display: flex;
+}
+
+.sidebar .main-menu {
+    list-style-type: none;
+}
+
+.menu .main-menu .menu-item {
+    text-transform: uppercase;
+    margin-left: 38px;
+    font-size: 17px;
+    font-weight: bold;
+    height: 62px;
+    display: flex;
+    align-items: center;
+}
+
+.menu .main-menu .menu-item a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu .main-menu .menu-item a:hover {
+    color: gray;
+}
+
+/* css phần giới thiệu cửa hàng online */
+
+.gioi-thieu {
+    margin: 20px 200px 30px 200px;
+    display: flex;
+}
+
+.list-gioi-thieu {
+    
+    height: fit-content;
+    margin-right: 15px;
+    
+
+}
+
+.main-gioi-thieu {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.item-gioi-thieu {
+    padding: 20px 60px 20px 15px;
+    border: 1px solid rgb(200, 196, 196);
+    font-size: 18px;
+    font-weight: 300;
+    display: flex;
+}
+
+.item-gioi-thieu a span {
+    text-decoration: none;
+    color: #000000;
+    padding-top: 5px;
+}
+
+.item-gioi-thieu a span:hover {
+    color: #42f29f;
+}
+
+.item-gioi-thieu a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.item-gioi-thieu a img {
+    padding-right: 10px;
+    width: 40px;
+}
+
+.item-gioi-thieu1 {
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.item-gioi-thieu2 {
+    border-bottom: none;
+}
+
+.item-gioi-thieu3 {
+    border-bottom: none;
+}
+
+.item-gioi-thieu4 {
+    border-bottom: none;
+}
+
+.item-gioi-thieu5 {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.img-gioi-thieu img {
+    box-shadow: 0 10px 20px rgba(0,0,0,.19);
+}
+
+/* css phần nội dung cam kết */
+
+.commit {
+    width: max;
+    height: 150px;
+    background-color: #42f29f;
+}
+
+.commit-content {
+    margin: 15px 150px 15px 150px;
+    display: flex;
+}
+
+.commit-content-item {
+    background-color: #fff;
+    width: 400px;
+    display: flex;
+    margin-right: 20px;
+    margin-top: 27px;
+    padding: 7px 20px 7px 10px;
+    border-radius: 8px;
+}
+
+.main-commit {
+    padding-top: 7px;
+    padding-left: 15px;
+    line-height: 25px;
+}
+
+.main-commit b {
+    color: #0000ff;
+    font-size: 18px;
+}
+
+/* css nội dung giới thiệu shop */
+.gioi-thieu-shop {
+    background-image: url(https://img5.thuthuatphanmem.vn/uploads/2021/11/17/anh-nen-powerpoint-xam-khoi_022119957.jpg);
+    height: 500px;
+}
+
+.noi-dung {
+    display: flex;
+    padding: 35px 150px 50px;
+}
+
+.img-gioi-thieu1 img {
+    width: 310px;
+    padding-left: 50px;
+}
+
+.img-gioi-thieu2 img {
+    width: 280px;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.text-gioi-thieu h2 {
+    color: #0000ff;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    word-spacing: 7px;
+}
+
+
+.text-gioi-thieu p {
+    line-height: 27px;
+    font-size: 17px;
+    color: #565555;
+}
+
+/* css các loại hoa */
+
+.hoa-sinh-nhat, .hoa-khai-truong, .gio-hoa {
+    height: 600px;
+}
+
+.title-hoa-sn {
+    padding: 30px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ff9401;
+}
+
+.card-item {
+    flex-basis: 25%;
+    padding: 5px 150px;
+    display: flex;
+    height: max;
+}
+
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,.15);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.5s;
+    width: 220px;
+    height: 430px;
+    margin-left: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 2px 4px rgba(0,0,0,.45);
+}
+
+.card-image {
+    height: 300px;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.card-image:hover {
+    transform: scale(1.1);
+}
+
+.card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 10px 15px;
+    height: 300px;
+}
+
+.card-content p {
+    color: blue;
+    font-size: 17px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+#price {
+    color: red;
+}
+
+.buttom-hoa {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+.detail-hoa {
+    background-color: #42f29f;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.cart-hoa {
+    background-color: #ff9401;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.detail-hoa a, .cart-hoa a {
+    color: black;
+}
+
+* a {
+    text-decoration: none;
+}
+
+.hoa-tinh-yeu, .bo-hoa-baby {
+    height: 600px;
+    background-image: url(https://img5.thuthuatphanmem.vn/uploads/2021/11/17/anh-nen-powerpoint-xam-khoi_022119957.jpg);
+}
+
+/* css nội dung cam kết 2 */
+.commit2 {
+    width: max;
+    height: 150px;
+    border-top: 1px solid rgb(236, 233, 233);
+}
+
+.commit2-content {
+    margin: 15px 40px 15px 100px;
+    display: flex;
+}
+
+.commit2-content-item {
+    background-color: #fff;
+    width: 500px;
+    display: flex;
+    margin-right: 20px;
+    padding: 7px 20px 7px 10px;
+}
+
+.main-commit2 {
+    padding-top: 7px;
+    padding-left: 15px;
+    line-height: 25px;
+}
+
+#title-commit {
+    color: red;
+}
+
+/* css cho footer */
+.footer {
+    width: 100%;
+}
+
+.row2 {
+    margin: 0px 80px 0px 80px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    color: black;
+    padding: 20px;
+}
+
+.col1 {
+    width: 350px;
+}
+
+.col2 {
+    width: 350px;
+}
+
+.col3 {
+    width: 250px;
+}
+
+.col4 {
+    width: 320px;
+}
+
+.menu ul li, .row2 ul li {
+    list-style-type: none;
+    padding: 10px 0px;
+}
+
+ul li a, div a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li a:hover, div a:hover {
+    color: #42f29f;
+}
+
+.header-footer {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.icon-footer span {
+    margin: 100px 20px;
+    font-size: 30px;
+}
+
+#icon-dt {
+    color: #51cb5a;
+}
+
+#icon-youtube {
+    color: #c33223;
+}
+
+#icon-fb {
+    color: #0693e3;
+}
+
+.img-fanpage a img {
+    width: 320px;
+}
+
+/* css phần thông tin liên lạc sticky */
+.sticky-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+}
+
+.sticky-container button {
+    border-radius: 20px;
+    padding: 10px 18px;
+    display: block;
+    margin-bottom: 6px;
+    border: none;
+}
+
+.chat-zalo {
+    background-color: #0585FF;
+}
+
+.chat-zalo a, .chat-fb a, .hotline a {
+    color: white;
+    font-size: 16px;
+}
+
+
+.chat-fb {
+    background-color: #315192;
+}
+
+.hotline {
+    background-color: #fc6449;
+}
