@@ -46,16 +46,12 @@ header, footer {
     width: 100%;
 }
 
-.experience-item .img-fluid {
-    height: 204px;
-    object-fit: cover;
-    width: 100%;
-}
-
 .experiment-item {
     height: 555px;
-    
 }
 
+#experiment .experiment-item img {
+    height: 230px; object-fit: cover; width: 100%;
+}
 
 
