@@ -1,0 +1,61 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header, footer {
+    background-color: #30598c;
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: 37px;
+    object-fit: cover;
+}
+
+#service {
+    color: #464646;
+}
+
+.avatar img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.list-unstyled li {
+    font-size: 15px;
+}
+
+.course-item {
+    height: 510px;
+}
+
+.Product-item img {
+    max-height: 204px;
+    object-fit: cover;
+    width: 100%;
+}
+
+#video {
+    background-color: #f5faff;
+}
+
+.video-item img {
+    max-height: 204px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.experience-item .img-fluid {
+    height: 204px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.experiment-item {
+    height: 555px;
+    
+}
+
+
+
