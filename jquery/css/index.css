@@ -1,0 +1,83 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+div.form-student {
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 50px 150px;
+    display: flow-root;
+}
+
+div.form-student label {
+    width: 150px;
+}
+
+div.form-student input {
+    width: 300px;
+}
+
+.btn {
+    padding: 5px 35px;
+    border-radius: 7px;
+    margin: 20px 20px;
+}
+
+#save {
+    margin-left: 190px;
+}
+
+#edit {
+    padding: 5px 45px;
+}
+
+div.list-student table {
+    width: 800px;
+    border: 1.2px solid black;
+}
+
+.list-student table tr td input {
+    width: 20px;
+    height: 20px;
+}
+
+.form-input:hover {
+    border-color: #1dbfaf;
+}
+
+.form-input.invalid .form-control {
+    border-color: #f33a58;
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+
+.form-message {
+    font-size: 1.0rem;
+    display: inline-block;
+    /* padding-left: 150px; */
+}
+
+.form-label,
+.form-message {
+    text-align: left;
+}
+
+.form-label {
+    font-weight: 400;
+    padding-bottom: 6px;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+}
+
+.form-input {
+    height: 35px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.1rem;
+}
